@@ -184,3 +184,59 @@ transition:.3s;
 .btn-facebook:hover{
 transform:scale(1.05);
 }
+.hero{
+height:auto;
+padding:120px 20px 60px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero h2{
+font-size:22px;
+}
+
+.hero p{
+font-size:16px;
+line-height:1.6;
+}
+
+.numero{
+font-size:24px;
+}
+
+.nav{
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.menu a{
+margin:5px;
+}
+
+.fotos{
+grid-template-columns:1fr;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.btn{
+width:100%;
+max-width:300px;
+}
+
+}
