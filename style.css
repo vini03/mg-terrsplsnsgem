@@ -18,7 +18,7 @@ footer{background:#000;color:#fff;text-align:center;padding:20px}
 /* HERO */
 
 .hero{
-height:100vh;
+min-height:100vh;
 background:
 linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
 url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600');
@@ -239,4 +239,16 @@ width:100%;
 max-width:300px;
 }
 
+}
+
+html,
+body{
+overflow-x:hidden;
+width:100%;
+}
+
+img{
+max-width:100%;
+height:auto;
+display:block;
 }
