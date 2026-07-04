@@ -1,0 +1,279 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f7f7f7}
+header{position:fixed;top:0;width:100%;background:#111}
+.nav{display:flex;justify-content:space-between;padding:15px 20px}
+.logo{color:#ffb300;font-weight:800}
+.menu a{color:#fff;text-decoration:none;margin-left:15px}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600');background-size:cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px}
+.btn{background:#25D366;color:#fff;padding:15px 30px;text-decoration:none;border-radius:8px}
+section{padding:90px 20px}
+.titulo{text-align:center;margin-bottom:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#fff;padding:20px;border-radius:10px}
+.contato{background:#ffb300;color:#fff;text-align:center}
+.branco{color:#fff}
+.numero{font-size:30px}
+footer{background:#000;color:#fff;text-align:center;padding:20px}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+color:white;
+}
+
+.hero h1{
+font-size:65px;
+font-weight:800;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:30px;
+color:#ffb300;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:16px 35px;
+border-radius:8px;
+text-decoration:none;
+font-size:18px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* DIFERENCIAIS */
+
+.diferenciais{
+background:#111;
+color:white;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.box{
+background:#1f1f1f;
+padding:30px;
+border-radius:10px;
+text-align:center;
+}
+
+/* GALERIA */
+
+.galeria{
+background:white;
+padding:80px 20px;
+}
+
+.fotos{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.fotos img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* CONTATO */
+
+.contato{
+background:#ffb300;
+color:white;
+text-align:center;
+}
+
+.numero{
+font-size:35px;
+font-weight:700;
+margin:20px 0;
+}
+
+.formulario{
+max-width:700px;
+margin:40px auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.formulario input,
+.formulario textarea{
+padding:15px;
+border:none;
+border-radius:8px;
+}
+
+.formulario button{
+padding:15px;
+background:#111;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:18px;
+}
+
+.redes{
+display:flex;
+justify-content:center;
+gap:15px;
+margin:25px 0;
+flex-wrap:wrap;
+}
+
+.btn-facebook{
+background:#1877F2;
+color:white;
+padding:15px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-facebook:hover{
+transform:scale(1.05);
+}
+
+.btn-messenger{
+background:#0084FF;
+color:white;
+padding:15px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-messenger:hover{
+transform:scale(1.05);
+}
+
+.fotos{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+max-width:1200px;
+margin:auto;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+@media (max-width: 768px){
+  
+.hero{
+height:auto;
+padding:120px 20px 60px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero h2{
+font-size:22px;
+}
+
+.hero p{
+font-size:16px;
+line-height:1.6;
+}
+
+.numero{
+font-size:24px;
+}
+
+.nav{
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.menu a{
+margin:5px;
+}
+
+.fotos{
+grid-template-columns:1fr;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.btn{
+width:100%;
+max-width:300px;
+}
+
+html,
+body{
+overflow-x:hidden;
+width:100%;
+}
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
