@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Contato</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav class="nav">
+
+<div class="logo">
+M.G TERRAPLANAGEM
+</div>
+
+<div class="menu">
+<a href="index.html">Início</a>
+<a href="servicos.html">Serviços</a>
+<a href="diferenciais.html">Diferenciais</a>
+<a href="galeria.html">Galeria</a>
+<a href="contato.html">Contato</a>
+</div>
+
+</nav>
+</header>
+
+<section class="contato">
+
+<h2 class="titulo" style="color:white;">
+FALE CONOSCO
+</h2>
+
+<p>
+COMPROMISSO, QUALIDADE E RESULTADOS!
+</p>
+
+<div class="numero">
+📞 (11) 99168-7036
+</div>
+
+<div class="redes">
+
+<a class="btn"
+href="https://wa.me/5511991687036"
+target="_blank">
+WhatsApp
+</a>
+
+<a class="btn-facebook"
+href="https://www.facebook.com/profile.php?id=61590614881264"
+target="_blank">
+Facebook
+</a>
+
+<a class="btn-messenger"
+href="https://m.me/61590614881264"
+target="_blank">
+Messenger
+</a>
+
+</div>
+
+<div class="formulario">
+
+<input id="nome" type="text" placeholder="Seu Nome">
+
+<input id="telefone" type="tel" placeholder="Seu Telefone">
+
+<textarea id="descricao" rows="5" placeholder="Descreva seu projeto"></textarea>
+
+<button type="button" onclick="enviarOrcamento()">
+Solicitar Orçamento
+</button>
+
+</div>
+
+</section>
+
+<script>
+function enviarOrcamento() {
+
+    const nome = document.getElementById("nome").value.trim();
+    const telefone = document.getElementById("telefone").value.trim();
+    const descricao = document.getElementById("descricao").value.trim();
+
+    if(nome === "" || telefone === "" || descricao === ""){
+        alert("Preencha todos os campos.");
+        return;
+    }
+
+    const mensagem =
+`Olá, gostaria de solicitar um orçamento.
+
+Nome: ${nome}
+Telefone: ${telefone}
+Descrição: ${descricao}`;
+
+    const url =
+    "https://wa.me/5511991687036?text=" +
+    encodeURIComponent(mensagem);
+
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
