@@ -122,6 +122,8 @@ border-radius:10px;
 background:#ffb300;
 color:white;
 text-align:center;
+min-height:100vh;
+padding:100px 20px;
 }
 
 .numero{
